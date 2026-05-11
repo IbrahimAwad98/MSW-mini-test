@@ -1,25 +1,29 @@
 # MSW Mini Test
 
-A simple JavaScript project demonstrating how to use [MSW (Mock Service Worker)](https://mswjs.io/) to test API requests in a Node.js environment.
+Ett enkelt JavaScript-projekt som visar hur du använder [MSW (Mock Service Worker)](https://mswjs.io/) för att testa API-förfrågningar i en Node.js-miljö.
 
-## Functionality
-The project includes a function `getTemperature(city)` which fetches the current temperature for a city via an HTTP request (mocked in the test environment). Testing is done using [Vitest](https://vitest.dev/) and MSW for mocking API responses.
+## Funktionalitet
 
-## File Structure
-- `src/weather.js`: Exports the `getTemperature(city)` function
-- `src/weather.test.js`: Contains tests to ensure the correct temperature is returned, with MSW mocking the API response
-- `package.json`: Configuration and dependencies (msw, vitest)
-- `vitest.config.js`: Test environment configuration
+Projektet innehåller en funktion `getTemperature(city)` som hämtar aktuell temperatur för en stad via en HTTP-förfrågan (mockad i testmiljön). Testning görs med hjälp av [Vitest](https://vitest.dev/).
 
-## Getting Started
-1. Install dependencies:
+## Filstruktur
+
+- `src/weather.js`: Exporterar funktionen `getTemperature(city)`
+- `src/weather.test.js`: Innehåller tester för att säkerställa rätt temperatur, där MSW mockar API-responsen
+- `package.json`: Konfiguration och beroenden (msw, vitest)
+- `vitest.config.js`: Konfigurerar testmiljön
+
+## Kom igång
+
+1. Installera beroenden:
    ```sh
    npm install
    ```
-2. Run tests:
+2. Kör tester:
    ```sh
    npm test
    ```
 
-## About the Project
-This repository contains a minimal test project using MSW (Mock Service Worker) with JavaScript. It demonstrates how to set up and use MSW for mocking API requests in a development or testing environment. The project serves as a simple starting point for integrating MSW into JavaScript applications.
+## Om projektet
+
+Detta repository innehåller ett minimalt testprojekt som använder MSW (Mock Service Worker) med JavaScript. Det visar hur du sätter upp och använder MSW för att mocka API-förfrågningar i en utvecklings- eller testmiljö.
